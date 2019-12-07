@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="password" class="password" oninput="validate()">
+  <a class="toggle" onclick='show()'>Show Password?</a>
+  <ul class="validations">
+    <li class="greater" style="color: tomato">Greater than 5 characters</li>
+    <li class="less" style="color: tomato">Less than 20 characters</li>
+    <li class="special" style="color: tomato">Contains a special character</li>
+    <li class="number" style="color: tomato">Contains a numeric character</li>
+  </ul>
+  <script src="index.js"></script>
+</body>
+
+</html>
