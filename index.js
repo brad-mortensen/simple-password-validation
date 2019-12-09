@@ -15,9 +15,13 @@ const validate = () => {
   length < 20 ? less.style.color = 'green' : less.style.color = 'tomato';
   value.match(/[!@#$%^&*(),.?":{}|<>]/g) ? special.style.color = 'green' : special.style.color = 'tomato';
   value.match(/[0-9]/g) ? number.style.color = 'green' : number.style.color = 'tomato';
+  if (greater.style.color === 'green' && less.style.color === 'green' && special.style.color === 'green' && number.style.color === 'green') {
+    submit.disabled = false;
+  } else { submit.disabled = true; }
 };
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  if (greater.style.color === 'green' && less special number)
+const handleSubmit = () => {
+  if(submit.disabled === false) {
+    alert(`${input.value} is a valid password`)
+  }else {}
 }
